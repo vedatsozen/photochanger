@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO CHANGER by VEDAT SÖZEN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+<div id="imgcontainer"><img id="activeimg"></div>
+
+<img id="left" class="left arrow" src="images/leftarrow.png">
+<img id="right" class="right arrow" src="images/rightarrow.png">
+</body>
+
+<script>
+
+let indexNo = 0;
+
+let products = ["img1.jpg","img2.jpg","img3.jpg"];
+
+document.getElementById("activeimg").src = "images/" + products[indexNo];
+
+document.getElementById("right").addEventListener("click",function(){
+indexNo = indexNo + 1 ;
+if ( indexNo > 2 ) {
+    indexNo = 0 ;
+}
+document.getElementById("activeimg").src = "images/" + products[indexNo];
+})
+
+document.getElementById("left").addEventListener("click",function(){
+indexNo = indexNo - 1 ;
+if ( indexNo < 0 ) {
+    indexNo = 2 ;
+}
+document.getElementById("activeimg").src = "images/" + products[indexNo];
+})
+
+
+</script>
+</html>

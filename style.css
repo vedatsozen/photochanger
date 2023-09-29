@@ -1,0 +1,126 @@
+body {
+    background: linear-gradient(to right, rgb(95, 1, 95), rgb(39, 2, 39));
+}
+
+#imgcontainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    width: 600px;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px black;
+}
+
+img.left {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 50%;
+    padding: 0px;
+  
+}
+
+img.right {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 50%;
+    padding: 0px;
+  
+}
+
+img.arrow {
+    cursor: pointer;
+}
+
+img.arrow:hover {
+border: 4px solid white;
+transition:200ms ease;
+}
+
+img.arrow:active {
+    border: 2px solid white;
+}
+
+#imgcontainer > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+img#activeimg {
+    transition: 200ms ease;
+}
+
+@media only screen and (max-width:600px) {
+
+    body {
+        background: linear-gradient(to right, rgb(95, 1, 95), rgb(39, 2, 39));
+    }
+    
+    #imgcontainer {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 300px;
+        width:90vw;
+        border: 2px solid white;
+        border-radius: 50%;
+        box-shadow: 0 0 20px black;
+    }
+    
+    img.left {
+        position: absolute;
+        top: 70%;
+        left:20%;
+        transform: translate(-50%);
+        background-color: white;
+        border-radius: 50%;
+        padding: 0px;
+      
+    }
+    
+    img.right {
+        position: absolute;
+        top: 70%;
+        left:80%;
+        transform: translate(-50%);
+        background-color: white;
+        border-radius: 50%;
+        padding: 0px;
+      
+    }
+    
+    img.arrow {
+        cursor: pointer;
+
+    }
+    
+    img.arrow:hover {
+    border: 4px solid white;
+    transition:200ms ease;
+    }
+    
+    img.arrow:active {
+        border: 2px solid white;
+    }
+    
+    #imgcontainer > img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+    img#activeimg {
+        transition: 200ms ease;
+    }
+
+}
